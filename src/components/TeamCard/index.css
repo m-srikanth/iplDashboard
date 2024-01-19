@@ -1,0 +1,20 @@
+.li1 {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff33;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 15px;
+  width: 300px;
+}
+.logo {
+  height: 70px;
+  width: 70px;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}

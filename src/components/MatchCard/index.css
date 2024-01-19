@@ -1,0 +1,16 @@
+.div31 {
+  list-style-type: none;
+  background-color: #1e293b;
+  color: white;
+  border-radius: 3px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.img13 {
+  height: 70px;
+  width: 70px;
+}

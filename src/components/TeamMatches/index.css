@@ -1,0 +1,42 @@
+.div11 {
+  padding: 50px;
+  height: 100%;
+  width: 100%;
+}
+.ul2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.img11 {
+  width: 100%;
+}
+.green {
+  color: #18ed66;
+}
+.red {
+  color: #e31a1a;
+}
+.kkr {
+  background-image: linear-gradient(to top, #1e293b, #5755a7);
+}
+.kxp {
+  background-image: linear-gradient(to top, #1e293b, #d91c1f);
+}
+.csk {
+  background-image: linear-gradient(to top, #1e293b, #f7db00);
+}
+.rr {
+  background-image: linear-gradient(to top, #1e293b, #da237b);
+}
+.mi {
+  background-image: linear-gradient(to top, #1e293b, #13418b);
+}
+.srh {
+  background-image: linear-gradient(to top, #1e293b, #f26d22);
+}
+.dc {
+  background-image: linear-gradient(to top, #1e293b, #4f5db0);
+}
+.rcb {
+  background-image: linear-gradient(to top, #1e293b, #a4261d);
+}

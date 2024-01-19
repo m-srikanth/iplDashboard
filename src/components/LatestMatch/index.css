@@ -1,0 +1,14 @@
+.div21 {
+  background-color: #1e293b;
+  color: white;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img12 {
+  height: 100px;
+  width: 100px;
+}
