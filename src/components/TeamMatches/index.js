@@ -1,6 +1,7 @@
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import LatestMatch from '../LatestMatch'
+import Legend1 from '../Legend'
 import MatchCard from '../MatchCard'
 
 import './index.css'
@@ -11,10 +12,18 @@ class TeamMatches extends Component {
     teamImg: '',
     latestMatch: {},
     recentMatches: [],
+    wonC: 5,
+    drawC: 5,
+    loseC: 5,
   }
 
   componentDidMount = () => {
     this.getData()
+  }
+
+  goBack = () => {
+    const {history} = this.props
+    history.push('/')
   }
 
   getData = async () => {
@@ -52,6 +61,9 @@ class TeamMatches extends Component {
       matchStatus: i.match_status,
     }))
 
+    const stat = data.recent_matches.map(j => j.match_status === 'Won')
+    console.log(stat)
+
     this.setState({
       isLoading: false,
       teamImg: data.team_banner_url,
@@ -61,7 +73,7 @@ class TeamMatches extends Component {
   }
 
   loaderView = () => (
-    <div className="loader-container" testid="loader">
+    <div className="loader-container" data-testid="loader">
       <Loader type="Oval" color="#ffffff" height={50} />
     </div>
   )
@@ -94,7 +106,7 @@ class TeamMatches extends Component {
   }
 
   successView = () => {
-    const {teamImg, latestMatch, recentMatches} = this.state
+    const {teamImg, latestMatch, recentMatches, wonC, loseC, drawC} = this.state
     const b = `div11 ${this.getClassname}`
 
     return (
@@ -106,6 +118,10 @@ class TeamMatches extends Component {
             <MatchCard each={i} key={i.id} />
           ))}
         </ul>
+        <Legend1 winC={wonC} loseC={loseC} drawC={drawC} />
+        <button type="button" onClick={this.goBack}>
+          Back
+        </button>
       </div>
     )
   }

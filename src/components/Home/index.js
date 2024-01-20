@@ -24,7 +24,7 @@ class Home extends Component {
   }
 
   loaderView = () => (
-    <div className="loader-container" testid="loader">
+    <div className="loader-container" data-testid="loader">
       <Loader type="Oval" color="#ffffff" height={50} />
     </div>
   )
